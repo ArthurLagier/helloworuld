@@ -1,0 +1,28 @@
+h3 {
+    font-size: 20px!important;
+}
+
+#new-product-section {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#new-product-div {
+    margin: 27% auto; /* centered */
+}
+
+#new-product-card-form {
+    padding: 13px;
+
+    input {
+        margin-top: 2px;
+        margin-bottom: 13px;
+    }
+}

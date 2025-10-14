@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="app/script.js" defer></script>
+        <title>Fake Store</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Bienvenue chez Fakestore</span>
+                    <ul>
+                        <li>
+                            <label for="site-search">Rechercher</label>
+                            <input type="search" id="site-search" name="search-item" placeholder="Rechercher un produit">
+                            <button id="refresh" class="btn btn-primary">Rafraîchir</button>
+                        </li>
+                        <li>
+                            <button id="add-product" class="btn btn-primary">Ajouter un produit</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <h1>Catalogue des produits</h1>
+        </section>
+        <section id="product-section">
+
+        </section>
+        <section id="new-product-section">
+            <div id="new-product-div" class="col-md-3 mb-4">
+                <form id="new-product-card-form" class="card h-100">
+                    <h4>Ajouter un produit</h4>
+                    <label for="title">Nom</label>
+                    <input type="text" id="new-product-name" name="new-product-name" maxlength="100">
+                    <label for="price">Prix (€)</label>
+                    <input type="number" id="new-product-price" name="new-product-price" min="0.01" step="0.01">
+                    <label for="description">Description</label>
+                    <input type="text" id="new-product-description" name="new-product-description" maxlength="400">
+                    <label for="image">image (URL)</label>
+                    <input type="url" id="new-product-url" name="new-product-url">
+                    <div id="save-cancel-new-product">
+                        <input type="submit" value="Enregistrer">
+                        <input type="button" value="Annuler" id="cancel-new-product-button"> 
+                    </div>
+                </form>
+            </div>
+        </section>
+        <aside>
+        </aside>
+    </body>
+</html>
